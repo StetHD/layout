@@ -9,7 +9,8 @@ var
 	dom = require('enyo/dom'),
 	platform = require('enyo/platform'),
 	utils = require('enyo/utils'),
-	Animator = require('enyo/Animator');
+	Animator = require('enyo/Animator'),
+	Control = require('enyo/Control');
 
 var
 	CardArranger = require('../CardArranger');
@@ -65,6 +66,11 @@ var Panels = module.exports = kind(
 	* @private
 	*/
 	name: 'enyo.Panels',
+
+	/**
+	* @private
+	*/
+	kind: Control,
 
 	/**
 	* @private
